@@ -1,0 +1,124 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.travel{
+    width:100%;
+}
+
+/* 注册按钮设置 */
+.sel_btn{
+    color:#fff;
+    height: 28px;
+    line-height: 28px; 
+    padding: 0 14px;
+    background:#0fc7d1;
+    border: 1px #0fc7d1 solid;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 0.8rem;
+    outline: none;
+}
+
+/* 登录按钮设置 */
+.sel_btn:hover{
+    background:#0fc7b1;
+    color:#fff;
+    text-decoration: none;
+}
+.sel_btn1{
+     background:rgba(0,0,0,0);
+     color:#0fc7d1;
+ }
+.sel_btn1:hover{
+    background:#0fc7d1;
+    text-decoration: none;
+    color:#fff;
+}
+/* 背景轮播 图片大小设置 */
+ .img_bg{
+    width:30%;
+}  
+
+/* 上列表设置 */
+ .navee{
+    /* position:absolute; */
+    z-index: 1000;
+    width: 100%;
+}
+.travel{
+    top: 0;
+}
+.travel>.navee>.contain>.row{
+    width:1310px;
+    margin:0 auto;
+}
+.contain>.row>div:first-child>a{
+    text-decoration: none;
+    font-size:1.25rem;
+    color:#0fc7d1;
+}
+.contain>.row>div>a{
+    color:#000;
+    list-style: none;
+    text-decoration: none;
+}
+.contain>.row>div>a:hover{
+    color:#0fc7d1;
+} 
+
+/* 加载条 */
+.met-index-case{
+    background:rgba(0,0,0,.5);
+    height: 40px;
+    bottom: 0;
+    z-index: 1000;
+}
+.container .row>div{
+    text-align: center;
+    line-height: 40px;
+}
+.container .row>div>a{
+    color:#fff;
+    padding:6px;
+}
+.container .row div>a:hover{
+    height:40px;
+    color:#0fc7d1;
+    text-decoration: none;
+}
+
+/* 查看更多 */
+.mor{
+    width:100%;
+}
+.mor>.contain{
+    width:1310px;
+    height:468px;
+    margin:0 auto;
+}
+.mor>.contain>ul{
+    list-style: none;
+}
+.mor>.contain>ul>li>img{
+    width: 410px;
+    height: 273px;
+    float: left;
+    margin:40px 40px 20px 0;
+}
+.mor>.contain>ul>li:last-child>img:first-child{
+    margin:40px 0 20px 0;
+}
+.mor>.contain>ul>li{
+    float: left;
+    height:366px;
+}
+h4{
+    margin:0;
+    padding:0;
+}
+.mor>.contain>ul>li>a{
+    color:#0fc7d1;
+}
