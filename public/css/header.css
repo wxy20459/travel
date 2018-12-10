@@ -1,0 +1,83 @@
+.header{
+    top: 0;
+}
+.header>div:last-child{
+    text-align: center;
+}
+.navee{
+    z-index: 1000;
+    width: 100%;
+}
+/* 登录按钮设置 */
+.sel_btn{
+    border:1px solid #0fc7d1;
+    background:rgba(0,0,0,0);
+    color:#0fc7d1;
+    text-align: center;
+    border-radius: 3px;
+ }
+.sel_btn:hover{
+    background:#0fc7d1;
+    color:#fff;
+    text-decoration: none;
+}
+/* 注册按钮设置 */
+.sel_btn1{
+    color:#fff;
+    background:#0fc7d1;
+    border: 1px #0fc7d1 solid;
+    border-radius: 3px;
+}
+/* 注册按钮设置 */
+.sel_btn1:hover{
+    background:#13e3ee;
+    color:#fff;
+    text-decoration: none;
+}
+
+/* 导航栏设置 */
+.travell>.row>div:first>a:first-child{
+    font-size:1.25rem;
+    color:#0fc7d1;
+}
+.travell>.shouye>div>a{
+    height:30px;
+    line-height: 30px;
+    color:#fff;
+    text-decoration: none;
+}
+/* 列表内容居中 */
+.travell>.shouye>div{
+    text-align: center;
+}
+/* 鼠标悬停效果设置 */
+.container>.shouye>div>a:hover{
+    color:#0fc7d1;
+} 
+/* 第一个元素样式 */
+.container>.shouye>div:first-child>a{
+    font-size: 1.25rem;
+    color:#0fc7d1;
+}
+.container>.shouye>div:first-child>a:hover{
+    color:#13e3ee;
+}
+.col-sm-2{
+    position: relative;
+}
+.col-sm-2>span{
+    display: block;
+    width:0px;
+    height: 0px;
+    border: 6px solid #fff;
+    border-left-color:transparent; 
+    border-right-color:transparent; 
+    border-bottom-color:transparent; 
+    position: absolute;
+    top:14px;
+    left:-56px;
+}
+.col-sm-2:nth-child(5)>span{
+    top:14px;
+    left:-64px;
+}
