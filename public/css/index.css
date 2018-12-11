@@ -12,27 +12,26 @@
 #demo{
     position: relative;
 }
-.travel>#demo>.daohang{
+.carousel-inner>.daohang{   
     position: absolute;
-    width:98.5%;
     bottom: 0px;
     background:rgba(0,0,0,.3);
     height: 40px;
     z-index: 1000;
 }
-.travel>#demo>.daohang>.container>.row>div{
+.carousel-inner>.daohang>.container>.row>div{
     line-height: 40px;
     text-align: center; 
 }
-.travel>#demo>.daohang>.container>.row>div>a{
+.carousel-inner>.daohang>.container>.row>div>a{
     color:#fff;
     padding:10px;
 }
-.travel>#demo>.daohang>.container>.row div>a:hover{
+.carousel-inner>.daohang>.container>.row div>a:hover{
     height:40px;
     color:#0fc7d1;
     text-decoration: none;
-}
+} 
 /* 查看更多 */
 .more>.container>.row>div>img{
     margin:30px 0 0;
@@ -67,7 +66,7 @@
 }
 /* target */
 .travel>.target{
-    /* padding:50px; */
+     padding:50px;
 }
 /* 目的地div */
 .travel>.container>a:hover{
@@ -76,9 +75,6 @@
 }
 .target>.container>.title-box{
     height: 70px;
-}
-.target>.container>.title-box>.head>p{
-    margin: 0;
 }
 .target>.container>.title-box>.head>p.desc{
     width: 38px;
@@ -127,3 +123,129 @@
 }
 
 /* target_body */
+.target_body>.container>.row>div>h4{
+    padding:20px 20px 20px 0;
+}
+.target_body>.container>.row>div>h4>a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#333;
+    font-size:16px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.target_body>.container>.row>div>h4>p{
+    color:#737b83f3;
+    font-size:12px;
+    margin-bottom: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+/* 查看更多按钮 */
+.travel>.target>.container>a{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    padding: 5 15px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #0fc7d1;
+    border: 1px solid #0fc7d1;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.travel>.target>.container>a:hover{
+    background:#0fc7d1;
+    color: #fff;
+}
+/* 关于我们 */
+.travel>.about{
+    padding: 50px;
+    height: 505px;
+    background-image: url("../img/about/about_1.jpg");
+}
+.travel>.about>.head{
+    margin-bottom: 25px;
+}
+
+/* about */
+.travel>.about>.container>.about_use>.head>h3{
+    margin-top: 22px;
+    margin-bottom: 11px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #333;
+    margin-top: 22px;
+}
+/* about > p __ */
+.travel>.about>.container>.about_use>.head>.desc{
+    width: 38px;
+    height: 2px;
+    background: #0fc7d1;
+}
+/* 左浮动 */
+.about>.container>.about_use>.contain>.left{
+    float: left;
+    width: 41.666667%;
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+}
+/* about_img */
+.about_img{
+    padding:20px;
+}
+/* 右浮动 */
+.about>.container>.about_use>.contain>.right>{
+    float: left;
+    position: relative;
+    background: #fff;
+    width: 1140px;
+    text-align: left;
+    padding: 5px 15px;
+    top: 130px;
+}
+/* p */
+.about>.container>.about_use>.contain>.right>.desc{
+    background:#fff;
+    position: absolute;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+    margin: 0;
+    padding: 30px 0;
+    margin-left: 42%;
+    visibility: inherit;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height:100px;
+    line-height: 100px;
+}
+.about>.container>.about_use>.contain>.right>.desc>span{
+    width:1257.5px;
+}
+.about>.container>.about_use>.contain>.right>.desc>a{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    padding: 5 15px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #0fc7d1;
+    border: 1px solid #0fc7d1;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.about>.container>.about_use>.contain>.right>.desc>a:hover{
+    background:#0fc7d1;
+    color: #fff;
+}
+
+
