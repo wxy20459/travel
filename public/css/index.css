@@ -1,4 +1,3 @@
-
 *{
     margin:0;
     padding:0;
@@ -272,6 +271,7 @@
 .travel>.hot{
     padding:30px;
     margin-top:30px;
+    width:100%;
 }
 .travel>.hot>.head{
     text-align: center;
@@ -309,10 +309,11 @@
     height: 2px;
 }
 /* hot>titile>contain>date */
+.travel>.hot>.row{
+    margin:0;
+}
 .travel>.hot>.row>.contain{
-    width:461px;
-    height: 231px;
-    padding:50px 35px 0;
+    padding:50px 27px 0;
 }
 .travel>.hot>.row>.contain>.date{
     font-weight: 300;
@@ -334,28 +335,23 @@
     font-size: 18px;
     color: rgb(102, 99, 99);
     display: inline-block;
-    line-height: 30px;
     width: 100%;
     height: 30px;
+    line-height: 30px;
     float: left;
 }
 .travel>.hot>.row>.contain>.description{
     text-align: left;
     color: #999;
     line-height: 25px;
-    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     margin-top: 10px;
     width: 100%;
-    height: 105px;
     overflow: hidden;
     font-size: 13px;
 }
-.travel>.hot>.row{
-    display: flex;
-}
 .travel>.hot>.row>.hot_img{
-    width:461px;
     padding:0;
+    width:460px;
 }
 .travel>.hot>.row>.hot_img>img{
     width:100%;
@@ -364,36 +360,153 @@
 .travel>.hot>.btn{
     display: flex;
     justify-content: center;
+    margin-top:22px;
 }
-.travel>.hot>.btn>div:hover{
+.travel>.hot>.btn>div>a:hover{
     background: #0fc7d1;
     color: white;
 }
-.travel>.hot>.btn>div{
-    width: 50px;
-    height: 50px;
-    line-height: 43px;
-    font-size: 36px;
-    color:#666;
-    margin-top:20px;
+.travel>.hot>.btn>div>a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 55px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    color:#888;
 }
-
-
-/* 
-.travel>.hot>.btn>.left{
-    width: 12px;
-    height: 12px;
-    border-right: #000 solid 2px;
-    border-bottom: #000 solid 2px;
-    transform: translateX(-50%) rotate(135deg);
+.travel>.hot>.btn>div:first-child{
     margin-right: 15px;
 }
-.travel>.hot>.btn>.right{
-    width: 12px;
-    height: 12px;
-    border-right: #000 solid 2px;
-    border-bottom: #000 solid 2px;
-    transform: translateX(-50%) rotate(320deg);
-    margin-left: 25px;
+.travel>.hot>.btn>div:last-child{
+    margin-left: 15px;
 }
- */
+
+
+/* 特色酒店 */
+/* hotel>head */
+.travel>.hotel{
+    width: 100%;
+    height: 1300px;
+    padding:70px 0;
+}
+.travel>.hotel>.container>.head{
+    text-align: center;
+}
+.travel>.hotel>.container>.head>h2{
+    font-size: 32px;
+    color: #333;
+    height: 45px;
+}
+.travel>.hotel>.container>.head>p{
+    color: #999;
+}
+/* hotel>box */
+.hotel>.container>.box>.contain{
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+}
+.hotel>.container>.box>.contain>img{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+}
+.hotel>.container>.box>.contain>.hotel_msg{
+    padding:31px 80px 31px 25px;
+}
+.hotel>.container>.box>.contain>.hotel_msg>a{
+    text-decoration: none;
+    color:#333; 
+}
+.hotel>.container>.box>.contain>.hotel_msg>p{
+    line-height: 1.8;
+    font-size: 13px;
+    color:#999;
+}
+
+/* 海豚 */
+.travel>.dolphin{
+    height: 226px;
+    background-image: url(../img/background/backgorud.jpg);
+}
+.travel>.dolphin>.container>.row{
+    text-align: center;
+    padding:51.25px 0;
+}
+.travel>.dolphin>.container>.row>.data_1>h5{
+    font-size:60px;
+    color:#fff;
+}
+.travel>.dolphin>.container>.row>.data_1>p{
+    font-size:18px;
+    color:#fff;
+}
+
+/* 旅行者专栏 */
+.travel>.column{
+    height: 358px;    
+}
+.travel>.column>.container>.row>.left{
+    height:56px;
+    line-height: 56px;
+    padding:0;
+}
+.travel>.column>.container>.row>.left>.head{
+    display: flex;
+    justify-content: space-between
+}
+.travel>.column>.container>.row>.left>.head>h3{
+    color:#333;
+    margin: 0;
+    height: 56px;
+    line-height: 56px;
+}
+
+.travel>.column>.container>.row>.left>.head>ul{
+    list-style: none;
+}
+.travel>.column>.container>.row>.left>.head>ul>li{
+    float: left;
+    padding-right:5px;
+}
+.travel>.column>.container>.row>.left>.head>ul>.bord{
+    color:rgb(165, 164, 164);
+}
+.travel>.column>.container>.row>.left>.head>ul>.three{
+    font-size: 20px;
+    color:#999;
+}
+
+/* body */
+.travel>.column>.container>.row>.left>.body{
+    width: 477px;
+    height: 205px;
+    float: left;
+}
+.travel>.column>.container>.row>.left>.body>img{
+    padding-right: 20px;
+    width:144px;
+    height: 120px;
+    float: left;
+}
+.travel>.column>.container>.row>.left>.body>.column_ll{
+    float: right;
+    width: 310px;
+}
+.travel>.column>.container>.row>.left>.body>.column_ll>h4>a{
+    color:#5c5757;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+}
+.travel>.column>.container>.row>.left>.body>.column_ll>p{
+    margin:0;
+    line-height: 1.5em;
+    color:#999;
+    font-size: 14px;
+}
+.travel>.column>.container>.row>.left>.body>.column_ll>span{
+    color:#999;
+}
