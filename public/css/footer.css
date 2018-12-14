@@ -1,6 +1,6 @@
 /* footer->padding */
 .footer{
-    padding:40px 0;
+    padding:50px 0 0 40px;
     line-height: 1.6;
 }
 /* ul>li字体设置 */
