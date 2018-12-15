@@ -25,6 +25,7 @@
 .carousel-inner>.daohang>.container>.row>div>a{
     color:#fff;
     padding:10px;
+    font-size:17px;
 }
 .carousel-inner>.daohang>.container>.row div>a:hover{
     height:40px;
@@ -34,9 +35,12 @@
 /* 查看更多 */
 .more>.container>.row>div>img{
     margin:30px 0 0;
+    width:360px;
 }
 .more>.container>.row>div>a{
     text-decoration: none;
+    display: block;
+    margin-top:8px;
 }
 .more>.container>.row>div>a>h5{
     color:#0fc7d1;
@@ -114,7 +118,8 @@
     padding: 0 20px;
 }
 .target>.container>.title-box>ul>.active>a{
-    background:#0fc7d1;     
+    background:#0fc7d1; 
+    color:#fff;    
 }
 .target>.container>.title-box>ul>li>a:hover{
     background:#0fc7d1; 
@@ -180,7 +185,9 @@
 .travel>.about{
     padding: 50px;
     height: 505px;
-    background-image: url("../img/about/about_1.jpg");
+    background: url("../img/about/about_1.jpg") no-repeat center;
+    background-size: cover;
+    /* background: url(bg-img.jpg) no-repeat center center fixed; */
 }
 .travel>.about>.head{
     margin-bottom: 25px;
@@ -389,7 +396,7 @@
 .travel>.hotel{
     width: 100%;
     height: 1300px;
-    padding:70px 0;
+    padding:50px 0;
 }
 .travel>.hotel>.container>.head{
     text-align: center;
@@ -414,11 +421,14 @@
     border-radius: 3px;
 }
 .hotel>.container>.box>.contain>.hotel_msg{
-    padding:31px 80px 31px 25px;
+    padding:20px 80px 31px 25px;
 }
 .hotel>.container>.box>.contain>.hotel_msg>a{
     text-decoration: none;
     color:#333; 
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
 }
 .hotel>.container>.box>.contain>.hotel_msg>p{
     line-height: 1.8;
@@ -479,10 +489,16 @@
 }
 .travel>.column>.container>.row>.left>.head>ul>.bord{
     color:rgb(165, 164, 164);
+    cursor: pointer;
 }
+.travel>.column>.container>.row>.left>.head>ul>li:nth-child(2){
+    color: #0fc7d1;
+}
+/* 左右小箭头 */
 .travel>.column>.container>.row>.left>.head>ul>.three{
     font-size: 20px;
-    color:#999;
+    color:rgb(110, 107, 107);
+    cursor: pointer;
 }
 
 /* body */
@@ -518,6 +534,9 @@
     font-weight: 600;
     text-decoration: none;
 }
+.travel>.column>.container>.row>.left>.body>.column_ll>h4>a:hover{
+    color:#0fc7d1;
+}
 .travel>.column>.container>.row>.left>.body>.column_ll>p{
     margin:0;
     line-height: 1.5em;
@@ -551,8 +570,10 @@
     color: #707070;
     text-decoration: none;
 }
-
-/* ul>li */
+.column>.container>.row>.right>.head>a:hover{
+    color:#0fc7d1;
+}
+/* 旅记攻略 ul>li */
 .column>.container>.row>.right>ul{
     list-style-type: none;
     margin-top:20px;
@@ -564,6 +585,9 @@
     text-decoration: none;
     color:#707070;
     font-size: 14px;
+}
+.column>.container>.row>.right>ul>li>a:hover{
+    color:#0fc7d1;
 }
 /* 友情链接 */
 .travel>.footer_link>.container{
@@ -581,6 +605,7 @@
 }
 .travel>.footer_link>.container>ul>li:first-child{
     color:#333;
+    font-size:18px;
 }
 .travel>.footer_link>.container>ul>li:not(:first-child){
     color:#999;
@@ -588,4 +613,5 @@
 .travel>.footer_link>.container>ul>li>img{
     width: 53.33px;
     height: 40px;
+    cursor: pointer;
 }
