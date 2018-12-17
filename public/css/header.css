@@ -47,6 +47,9 @@
     text-decoration: none;
 }
 /* 列表内容居中 */
+.travell>.shouye{
+    height: 30px;
+}
 .travell>.shouye>div{
     text-align: center;
 }
@@ -62,10 +65,10 @@
 .container>.shouye>div:first-child>a:hover{
     color:#13e3ee;
 }
-.col-sm-2{
+.travell>.shouye>div{
     position: relative;
 }
-.col-sm-2>span{
+.travell>.shouye>div>span{
     display: block;
     width:0px;
     height: 0px;
@@ -75,9 +78,9 @@
     border-bottom-color:transparent; 
     position: absolute;
     top:14px;
-    left:-56px;
+    left:134px;
 }
-.col-sm-2:nth-child(5)>span{
-    top:14px;
-    left:-64px;
+.travell>.shouye>div:nth-child(3)>span{
+    top:15px;
+    left:129px;
 }

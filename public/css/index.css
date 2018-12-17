@@ -2,9 +2,6 @@
     margin:0;
     padding:0;
 }
-.container{
-    padding:0 !important;
-}
 /* 轮播 */
 
 /* 加载条 */
@@ -34,9 +31,12 @@
 /* 查看更多 */
 .more>.container>.row>div>img{
     margin:30px 0 0;
+    width:100%;
 }
 .more>.container>.row>div>a{
     text-decoration: none;
+    display: block;
+    margin-top:8px;
 }
 .more>.container>.row>div>a>h5{
     color:#0fc7d1;
@@ -76,16 +76,15 @@
     height: 70px;
 }
 .target>.container>.title-box>.head>p.desc{
-    width: 38px;
+    width: 40px;
     height: 2px;
     background: #0fc7d1;
 }
 .target>.container>.title-box>.head>h3{
     margin-top: 22px;
     margin-bottom: 11px;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-size: 21px;
+    font-weight: 400;
     color: #333;
 }
 .target>.container>.title-box>.head{
@@ -114,7 +113,8 @@
     padding: 0 20px;
 }
 .target>.container>.title-box>ul>.active>a{
-    background:#0fc7d1;     
+    background:#0fc7d1; 
+    color:#fff;    
 }
 .target>.container>.title-box>ul>li>a:hover{
     background:#0fc7d1; 
@@ -150,7 +150,7 @@
     white-space: nowrap;
 }
 .target_body>.container>.row>div>h4>p{
-    color:#737b83f3;
+    color:#999;
     font-size:12px;
     margin-bottom: 14px;
     display: -webkit-box;
@@ -178,36 +178,41 @@
 }
 /* 关于我们 */
 .travel>.about{
-    padding: 50px;
-    height: 505px;
-    background-image: url("../img/about/about_1.jpg");
+    padding: 50px 0 50px 0;
+    width: 1901;
 }
-.travel>.about>.head{
-    margin-bottom: 25px;
+.travel>.about>.background_list_img{
+    background: url("../img/about/about_1.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 470px;
+    
+}
+.travel>.about>div>.container>.about_use>.head{
+    height:100px;
 }
 
 /* about */
-.travel>.about>.container>.about_use>.head>h3{
-    margin-top: 22px;
-    margin-bottom: 11px;
-    font-size: 20px;
-    font-weight: 300;
+.travel>.about>div>.container>.about_use>.head>h3{
+    padding-top:50px;
+    font-size: 21px;
+    font-weight: 400;
     letter-spacing: 1px;
     color: #333;
-    margin-top: 22px;
+    margin-top: 22px; 
 }
-.about>.container>.about_use>.contain{
+.about>div>.container>.about_use>.contain{
     position: relative;
     height:320px;
 }
 /* about > p __ */
-.travel>.about>.container>.about_use>.head>.desc{
-    width: 38px;
+.about>div>.container>.about_use>.head>.desc{
+    width: 50px;
     height: 2px;
     background: #0fc7d1;
 }
 /* 左浮动 */
-.about>.container>.about_use>.contain>.left{
+.about>div>.container>.about_use>.contain>.left{
     float: left;
     position: absolute;
     width: 42%;
@@ -219,7 +224,7 @@
     padding:20px;
 }
 /* 右浮动 */
-.about>.container>.about_use>.contain>.right{
+.about>div>.container>.about_use>.contain>.right{
     float: left;
     position: relative;
     background: #fff;
@@ -229,14 +234,14 @@
     top: 130px;
 }
 /* p */
-.about>.container>.about_use>.contain{
+.about>div>.container>.about_use>.contain{
     position: relative;
 }
-.about>.container>.about_use>.contain>.right{
+.abou>div>.container>.about_use>.contain>.right{
     position: absolute;
     bottom: 0;
 }
-.about>.container>.about_use>.contain>.right>.text{
+.about>div>.container>.about_use>.contain>.right>.text{
     background:#fff;
     font-size: 14px;
     color: #999;
@@ -247,10 +252,10 @@
     opacity: 1;
     height:173px;
 }
-.about>.container>.about_use>.contain>.right>.text>.desc{
+.about>div>.container>.about_use>.contain>.right>.text>.desc{
     margin-left: 44%;
 }
-.about>.container>.about_use>.contain>.right>.text>.desc>a{
+.about>div>.container>.about_use>.contain>.right>.text>.desc>a{
     display: block;
     width: 120px;
     padding: 5 15px;
@@ -262,7 +267,7 @@
     margin-top: 22px;
     text-decoration: none;
 }
-.about>.container>.about_use>.contain>.right>.text>.desc>a:hover{
+.about>div>.container>.about_use>.contain>.right>.text>.desc>a:hover{
     background:#0fc7d1;
     color: #fff;
 }
@@ -389,7 +394,7 @@
 .travel>.hotel{
     width: 100%;
     height: 1300px;
-    padding:70px 0;
+    padding:50px 0;
 }
 .travel>.hotel>.container>.head{
     text-align: center;
@@ -414,11 +419,14 @@
     border-radius: 3px;
 }
 .hotel>.container>.box>.contain>.hotel_msg{
-    padding:31px 80px 31px 25px;
+    padding:20px 80px 31px 25px;
 }
 .hotel>.container>.box>.contain>.hotel_msg>a{
     text-decoration: none;
     color:#333; 
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
 }
 .hotel>.container>.box>.contain>.hotel_msg>p{
     line-height: 1.8;
@@ -426,7 +434,7 @@
     color:#999;
 }
 
-/* 海豚 */
+/* 海豚背景 */
 .travel>.dolphin{
     width:100%;
     height: 226px;
@@ -434,7 +442,7 @@
 }
 .travel>.dolphin>.container>.row{
     text-align: center;
-    padding:51.25px 0;
+    padding:57.25px 0;
 }
 .travel>.dolphin>.container>.row>.data_1>h5{
     font-size:60px;
@@ -444,126 +452,139 @@
     font-size:18px;
     color:#fff;
 }
+/* 海豚_媒体查询-->字体 */
+/*pc*/
+@media screen and (min-width:992px) {
+    .travel>.dolphin>.container>.row{
+        text-align: center;
+        padding:57.25px 0;
+    }
+    .travel>.dolphin>.container>.row>.data_1 h5{
+        font-size:50px;
+    }
+    .travel>.dolphin>.container>.row>.data_1 p{
+        font-size:18px;
+    }
+}
+
+/*pad*/
+@media screen and (max-width:991px) and (min-width:768px) {
+    .travel>.dolphin>.container>.row{
+        text-align: center;
+        padding:65.25px 0;
+    } 
+    .travel>.dolphin>.container>.row>.data_1 h5{
+        font-size:40px;
+    }
+    .travel>.dolphin>.container>.row>.data_1 p{
+        font-size:16px;
+    }
+}
+
+/*phone*/
+@media screen and (max-width:767px) {
+
+    .travel>.dolphin>.container>.row{
+        text-align: center;
+        padding:77.25px 0;
+    }
+    .travel>.dolphin>.container>.row>.data_1 h5{
+        font-size: 25px;
+    }
+    .travel>.dolphin>.container>.row>.data_1 p{
+        font-size:12px;
+    }
+}
 
 /* 旅行者专栏 */
-.travel>.column{
-    height: 358px;
-}
-.travel>.column>.container{
-    height: 358px;
+.travel>.colmn{
     padding: 50px 0;
 }
-.travel>.column>.container>.row>.left{
-    height:56px;
-    line-height: 56px;
-    padding:0;
+a.colmn_lv{
+    text-decoration: none;
+    font-size:30px;
+    font-weight: 400px;
+    color: #333;
 }
-.travel>.column>.container>.row>.left>.head{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-.travel>.column>.container>.row>.left>.head>h3{
-    color:#333;
-    margin: 0;
-    height: 56px;
-    line-height: 56px;
-}
-
-.travel>.column>.container>.row>.left>.head>ul{
+/* 圆圈、三角形 */
+ul.colmn_ul{
     list-style: none;
+    display: flex;
+    text-align: right;
 }
-.travel>.column>.container>.row>.left>.head>ul>li{
-    float: left;
-    padding-right:5px;
-}
-.travel>.column>.container>.row>.left>.head>ul>.bord{
-    color:rgb(165, 164, 164);
-}
-.travel>.column>.container>.row>.left>.head>ul>.three{
-    font-size: 20px;
-    color:#999;
-}
-
-/* body */
-.travel>.column>.container>.row>.left>.body{
-    width: 438.5px;
-    height: 205px;
-    float: left;
-}
-.travel>.column>.container>.row>.left>.body>img{
-    padding-right: 6px;
-    width:123px;
-    height: 100px;
-    float: left;
-    margin-top:7px;
-}
-.travel>.column>.container>.row>.left>.body>.column_ll{
-    float: right;
-    width: 310px;
-}
-.travel>.column>.container>.row>.left>.body>.column_ll>h4{
-    width: 290px;
-    margin-bottom: 8px;
-    line-height: 1.25rem;
-}
-.travel>.column>.container>.row>.left>.body>.column_ll>p{
-    width:290px;
-    margin: 0;
-}
-.travel>.column>.container>.row>.left>.body>.column_ll>h4>a{
-    font-family: "Microsoft YaHei";
+ul.colmn_ul>li>a{
+    padding: 6px;
     font-size: 18px;
-    color:#5c5757;
+    color:#999;
+    margin-left: 6px;
+    text-decoration: none;
+}
+ul.colmn_ul>li.one>a{
+    color:#0fc7d1;
+    
+}
+/* img */
+div.colmn_img1{
+    width: 165px;
+    height: 140px;
+}
+div.colmn_img1>img{
+    width: 100%;
+}
+/* body */
+
+/* 标题a */
+a.colmn_a{
+    font-family: "Microsoft YaHei";
+    font-size: 17px;
+    color:#707070;
     font-weight: 600;
     text-decoration: none;
 }
-.travel>.column>.container>.row>.left>.body>.column_ll>p{
-    margin:0;
+a.colmn_a:hover{
+    color:#0fc7d1;
+}
+/* 内容p */
+p.clomn_p{
     line-height: 1.5em;
     color:#999;
-    font-size: 12px;
+    font-size: 13px;
 }
-.travel>.column>.container>.row>.left>.body>.column_ll>span{
+/* 时间span */
+span.clomn_span{
     color:#999;
 }
-.column>.container>.row>.left>.body{
-    width: 438.5px;
-    height: 205px;
-    float: left;
-}
-/* right */
-.column>.container>.row>.right>.head{
-    text-align: center;
-    margin:50px 0 0 0;
-    display: flex;
-    justify-content: space-between;
-}
-.column>.container>.row>.right>.head>h3{
-    width: 120px; 
-    height:36px;
-}
-.column>.container>.row>.right>.head>a{
-    font-size: 14px;
-    height:44px;
-    line-height: 44px;
-    display: inline-block;
-    color: #707070;
+/* 旅记攻略 */
+a.clomn_lj{
+    font-size: 30px;
+    font-weight: 400px;
     text-decoration: none;
+    color:#333;
 }
-
+/* 更多 */
+a.colmn_more{
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+    height: 45px;
+    line-height: 45px;
+}
+a.colmn_more:hover{
+    color:#0fc7d1;
+}
 /* ul>li */
-.column>.container>.row>.right>ul{
-    list-style-type: none;
-    margin-top:20px;
+ul.colmn_ul_li{
+    list-style: none;
 }
-.column>.container>.row>.right>ul>li{
-    padding-bottom: 5px;
+ul.colmn_ul_li>li{
+    padding: 3px 0;
 }
-.column>.container>.row>.right>ul>li>a{
+ul.colmn_ul_li>li>a{
+    color:#999;
     text-decoration: none;
-    color:#707070;
-    font-size: 14px;
+}
+ul.colmn_ul_li>li>a:hover{
+    color: #0fc7d1;
 }
 /* 友情链接 */
 .travel>.footer_link>.container{
@@ -581,6 +602,7 @@
 }
 .travel>.footer_link>.container>ul>li:first-child{
     color:#333;
+    font-size:18px;
 }
 .travel>.footer_link>.container>ul>li:not(:first-child){
     color:#999;
@@ -588,4 +610,5 @@
 .travel>.footer_link>.container>ul>li>img{
     width: 53.33px;
     height: 40px;
+    cursor: pointer;
 }
