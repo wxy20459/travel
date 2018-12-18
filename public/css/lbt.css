@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+ .img li>a{
+    width: 1901px;
+}
+.img>li>img{
+    width: 100%;
+}
+/*  carousel 样式 */
+.carousel {
+    width: 1901px;
+    height: 712px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* 左、右块儿公共样式 */
+.carousel .shade{
+    position: absolute;
+    top:0;
+    width: 10%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+/* 左块儿靠左 */
+.shade_left{
+    left: 0;
+}
+/* 右块儿靠右 */
+.shade_right{
+    right: 0;
+}
+
+/* 左右箭头 */
+.carousel .btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    right:37%;
+    color: #fff;
+    height: 100px;
+    line-height: 100px;              
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 指示符 div */
+.carousel .indicator {
+    position: absolute;
+    height: 24px;
+    bottom: 45px;
+    width: 100%;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* 指示符 li */
+.carousel .indicator li {
+    width: 40px;
+    height: 4px;
+    background-color: cyan;
+    line-height: 10px;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
