@@ -22,6 +22,7 @@
 .carousel-inner>.daohang>.container>.row>div>a{
     color:#fff;
     padding:10px;
+    font-size:15px;
 }
 .carousel-inner>.daohang>.container>.row div>a:hover{
     height:40px;
@@ -320,15 +321,19 @@
 .travel>.hot>.row>.contain{
     padding:50px 27px 0;
 }
+/* 日期 */
 .travel>.hot>.row>.contain>.date{
     font-weight: 300;
-    font-family: HELVETICANEUELTPRO-THEX;
     color: #999;
     display: inline-block;
     padding: 0 22px 0 0;
     float: left;
     font-size: 20px;
     margin-bottom: 0;
+}
+/* 鼠标悬停 */
+.travel>.hot>.row>.contain>.date:hover{
+    color: #0fc7d1;
 }
 .travel>.hot>.row>.contain>.title{
     margin-bottom: 15px;
@@ -379,7 +384,7 @@
     height: 45px;
     line-height: 45px;
     font-size: 30px;
-    color:#888;
+    color:#aaa;
 }
 .travel>.hot>.btn>div:first-child{
     margin-right: 15px;
@@ -461,6 +466,7 @@
     }
     .travel>.dolphin>.container>.row>.data_1 h5{
         font-size:50px;
+        font-weight: 400;
     }
     .travel>.dolphin>.container>.row>.data_1 p{
         font-size:18px;
@@ -473,8 +479,9 @@
         text-align: center;
         padding:65.25px 0;
     } 
-    .travel>.dolphin>.container>.row>.data_1 h5{
+    .travel>.dolphin>.container>.row>.data_1 h5{ 
         font-size:40px;
+        font-weight: 300;
     }
     .travel>.dolphin>.container>.row>.data_1 p{
         font-size:16px;
@@ -500,12 +507,14 @@
 .travel>.colmn{
     padding: 50px 0;
 }
+/* 字体设置 */
 a.colmn_lv{
     text-decoration: none;
     font-size:30px;
     font-weight: 400px;
     color: #333;
 }
+
 /* 圆圈、三角形 */
 ul.colmn_ul{
     list-style: none;
@@ -521,7 +530,6 @@ ul.colmn_ul>li>a{
 }
 ul.colmn_ul>li.one>a{
     color:#0fc7d1;
-    
 }
 /* img */
 div.colmn_img1{

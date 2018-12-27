@@ -1,0 +1,39 @@
+div.null{
+    height:100px;
+    background:#000;
+}
+div.login_body>img{
+    width:100%;
+}
+div.huiyuan{
+    font-size:35px;
+    text-align: center;
+    line-height: 100px;
+    color:#0fc7d1;
+}
+/* div.login>div.container{
+    height: 100px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 .9375rem;
+    background:red;
+}
+div.container>div.login_box{
+    background: red;
+} 
+div.login{
+    position: relative;
+}
+div.login>div.container{
+    position: absolute;
+}
+div.container>.login_box{
+    position: absolute;
+    weight: 400px;
+    height: 343px;
+    padding: 30px;
+    background:red;
+    top:-425px;
+    left:-121px;
+    z-index: 10;
+} */

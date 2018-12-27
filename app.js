@@ -1,4 +1,4 @@
-//使用express构建web服务器 --11:25
+//使用express构建web服务器
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require("cors");

@@ -36,8 +36,8 @@
 }
 
 /* 导航栏设置 */
-.travell>.row>div:first>a:first-child{
-    font-size:1.25rem;
+.travell>.row>div:first-child>a:first-child{
+    font-size:17px;
     color:#0fc7d1;
 }
 .travell>.shouye>div>a{
@@ -45,6 +45,7 @@
     line-height: 30px;
     color:#fff;
     text-decoration: none;
+    font-size: 15px;
 }
 /* 列表内容居中 */
 .travell>.shouye{
@@ -57,30 +58,69 @@
 .container>.shouye>div>a:hover{
     color:#0fc7d1;
 } 
-/* 第一个元素样式 */
-.container>.shouye>div:first-child>a{
-    font-size: 1.25rem;
-    color:#0fc7d1;
-}
 .container>.shouye>div:first-child>a:hover{
     color:#13e3ee;
 }
 .travell>.shouye>div{
     position: relative;
 }
-.travell>.shouye>div>span{
-    display: block;
-    width:0px;
-    height: 0px;
-    border: 6px solid #fff;
-    border-left-color:transparent; 
-    border-right-color:transparent; 
-    border-bottom-color:transparent; 
-    position: absolute;
-    top:14px;
-    left:134px;
-}
-.travell>.shouye>div:nth-child(3)>span{
-    top:15px;
-    left:129px;
-}
+
+/*pc*/
+@media screen and (min-width:992px){
+    .travell>.shouye>div>span{
+        display: block;
+        width:0px;
+        height: 0px;
+        border: 6px solid #fff;
+        border-left-color:transparent; 
+        border-right-color:transparent; 
+        border-bottom-color:transparent; 
+        position: absolute;
+        top:14px;
+        left:134px;
+    }
+  }
+  
+  /*pad*/
+  @media screen and (max-width:991px) and (min-width:768px){
+    .travell>.shouye>div>span{
+        display: block;
+        width:0px;
+        height: 0px;
+        border: 6px solid #fff;
+        border-left-color:transparent; 
+        border-right-color:transparent; 
+        border-bottom-color:transparent; 
+        position: absolute;
+        top:14px;
+        left:98px;
+    }
+    .travell>.shouye>div:nth-child(3)>span{
+        top:15px;
+        left:90px;
+    }
+  }
+  
+  /*phone*/
+  @media screen and (max-width:767px){
+    .travell>.shouye>div>span{
+        display: block;
+        width:0px;
+        height: 0px;
+        border: 6px solid #fff;
+        border-left-color:transparent; 
+        border-right-color:transparent; 
+        border-bottom-color:transparent; 
+        position: absolute;
+        top:14px;
+        left:78px;
+        
+    }
+    .travell>.row>div:first-child>a:first-child{
+        font-size:15px;
+    }
+    .travell>.shouye>div>a{
+        font-size: 12px;
+    }
+    
+  }
