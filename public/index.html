@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bease.css">
     <link rel="stylesheet" href="css/index.css"> 
@@ -15,48 +16,55 @@
 <body>
     <header id="header"></header>
     <div class="travel">
-        <!--轮播图-->
-        <div class="carousel position-relative container-fluid" id="demo" data-ride="carousel">
-            <!--指示符-->
-            <ul class="carousel-indicators">
-                <li class="active" data-target="#demo"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
+        <!-- 轮播图 -->
+        <div class="wrapper">
+            <ul class="picBox">
+                <li class="first">
+                    <img src="img/header/bg1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/header/bg2.jpg" alt="">
+                </li>
             </ul>
-            <!--左右箭头-->
-            <a href="#demo" class="carousel-control-prev" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a href="#demo" class="carousel-control-next" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+            <div class="btn">
+                <a href="#" class="left">&lt;</a>
+                <a href="#" class="right">&gt;</a>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="active"></li>
+                    <li></li>
+                </ul>
+            </div>
             <!-- 加载条 -->
-            <div class="carousel-inner">
-                <div class="daohang w-100">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <a href="">2018海南三亚旅游攻略使用版</a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <a href="">海南旅游自由攻略</a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <a href="a">海南三亚旅游攻略实用版 - 五天四晚游</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 图片 -->
-                <div class="carousel-item active">
-                    <img src="img/header/bg1.jpg" class="w-100" />
-                </div>
-                <div class="carousel-item">
-                    <img src="img/header/bg2.jpg" class="w-100" />
+            <div class="loading">
+                <div class="container">
+                    <ul class="one">
+                        <li><a href="#">2018海南三亚旅游攻略使用版</a></li>
+                        <li><a href="#">海南旅游自由攻略</a></li>
+                        <li><a href="#">海南三亚旅游攻略实用版 - 五天四晚游</a></li>
+                    </ul>
+                     <ul class="two">
+                        <li><a href="#">迪拜--最不能辜负的落地签的目的地</a></li>
+                        <li><a href="#">泰国-普吉岛-甲米-斯米兰6或7日游</a></li>
+                        <li><a href="#">国家旅游局通报新晋20家5A级景区</a></li>
+                    </ul>
+                    <ul class="three">
+                        <li><a href="#">2018海南三亚旅游攻略使用版</a></li>
+                        <li><a href="#">海南旅游自由攻略</a></li>
+                        <li><a href="#">海南三亚旅游攻略实用版 - 五天四晚游</a></li>
+                    </ul>
+                    <ul class="four">
+                        <li><a href="#">迪拜--最不能辜负的落地签的目的地</a></li>
+                        <li><a href="#">泰国-普吉岛-甲米-斯米兰6或7日游</a></li>
+                        <li><a href="#">国家旅游局通报新晋20家5A级景区</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <!-- </div> -->
         <!-- 查看更多 -->
-        <div class="more mt-3">
+        <div class="more">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-xs-12">

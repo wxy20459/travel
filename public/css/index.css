@@ -1,35 +1,166 @@
+/* 轮播 */
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
-/* 轮播 */
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+.wrapper{
+    position: relative;
+    width:1901px;
+    height:712px;
+    /* border:1px solid #000; */
+    margin:0 auto;
+    /* overflow: hidden; */
+}
+/* ul弹性、相对定位、两张图片的宽度 */
+.wrapper>ul.picBox{
+    display: flex;
+    position: relative;
+    width:3802px;
+    left:0;
+    top:0;
+}
+/* li弹性布局 */
+.wrapper .picBox li{
+    display: flex;
+    width:1901px;
+}   
+/* .wrapper .picBox li.first{
+    opacity: 1;
+} */
+.wrapper li img{
+    width:100%;
+}
+/* 左右箭头块儿 */
+.wrapper .btn{
+    position: absolute;
+    width:1901px;
+    height:70px;
+    /* border:1px solid #000; */
+    top:45%;
+    left:0;
+   
+}
+/* 左右箭头样式 */
+.wrapper .btn a{
+    display:block;
+    width:80px;
+    height:80px;
+    color:#fff;
+    font-size:40px;
+    text-align: center;
+    line-height:70px;
+    text-decoration: none;
+    /* background: rgba(0,0,0,.5); */
+}
+/* 左箭头 */
+.wrapper .btn a.left{
+    float:left;
+    margin-left:3%;
+}
+/* 右箭头 */
+.wrapper .btn a.right{
+    float:right;
+    margin-right:3%;
+}
+/* 小点点儿容器 */
+.wrapper .list{
+    position: absolute;
+    width:1901px;
+    height:20px;
+    /* border:1px solid #000; */
+    bottom:36px;
+    left:0;
+}
+
+.wrapper .list ul{
+    width:100%;
+    text-align: center;
+}
+/* 小点点儿 */
+.wrapper .list li{
+    display:inline-block;
+    width:40px;
+    height:4px;
+    border-radius:5px;
+    background-color:#fff;
+    margin:0 6px;
+    cursor: pointer;
+}
+/* 小点点儿默认样式 */
+.wrapper .list li.active{
+    background-color:#0fc7d1;
+}
+
 
 /* 加载条 */
-#demo{
-    position: relative;
-}
-.carousel-inner>.daohang{   
+.wrapper>.loading{
     position: absolute;
-    bottom: 0px;
-    background:rgba(0,0,0,.3);
+    bottom: -8px;
+    width:1901px;
     height: 40px;
-    z-index: 1000;
+    background:rgba(0,0,0,.4);
 }
-.carousel-inner>.daohang>.container>.row>div{
+.wrapper>.loading>.container{
+    height: 40px;
+    position: relative;
+    overflow: hidden; 
+}
+/* ul */
+.wrapper>.loading>.container ul{
+    position: absolute;
+    margin: 0;
+}
+/* li */
+.wrapper>.loading>.container ul li{
+    display: inline-block;
+    width:33%;
+}
+/* a标签 */
+.loading>.container li a{
+    text-align: center;
+    display: block;
+    color: #f00;
     line-height: 40px;
-    text-align: center; 
+    font-size: 15px;
 }
-.carousel-inner>.daohang>.container>.row>div>a{
-    color:#fff;
-    padding:10px;
-    font-size:15px;
-}
-.carousel-inner>.daohang>.container>.row div>a:hover{
-    height:40px;
+/* a标签悬浮 */
+.loading>.container  li a:hover{
     color:#0fc7d1;
-    text-decoration: none;
+}
+/* 第一个ul */
+.loading>.container>ul.one{
+    /* top:-40px; */
+}
+/* 第二个ul */
+.loading>.container>ul.two{
+    /* top:-40px; */
+}
+/* 第三个ul */
+ .loading>.container>ul.three{
+    /* top:-40px; */
 } 
+/* 第四个ul */
+.loading>.container>ul.four{
+    /* top:-40px; */
+} 
+
+
+
+
+
+
+
 /* 查看更多 */
+.travel>.more{
+    margin-top:30px;
+}
 .more>.container>.row>div>img{
     margin:30px 0 0;
     width:100%;
@@ -41,6 +172,7 @@
 }
 .more>.container>.row>div>a>h5{
     color:#0fc7d1;
+    font-size: 20px;
 }
 .more>.container>.row>div>a>h5:hover{
     color:#13e3ee;
