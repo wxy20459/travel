@@ -4,7 +4,7 @@ $(function () {
         url: "http://127.0.0.1:3000/footer.html",
         type: "get",
         success: function (res) {
-            //第一个功能 -- 轮播图 --
+            //第一个功能: -- 轮播图 --
             var nowIndex = 0;
             var len = $('.picBox li').length;
             var timer;
@@ -66,17 +66,14 @@ $(function () {
                         });
                     })
                 }).on('mouseleave', function () {
-                    // 鼠标移走继续轮播
+                    // 鼠标移出继续轮播
                     sliderAuto();
-                    $('.btn a').css({
-                        'display': 'none'
-                    });
                 })
             }
 
             function sliderAuto() {
                 clearTimeout(timer);
-                // 自动轮播  延迟3s 向右轮播  相当于点击右键按钮
+                // 自动轮播  延迟3s 向右轮播相当于点击右键按钮
                 timer = setTimeout(function () {
                     move('right');
                 }, 3000);
@@ -106,14 +103,9 @@ $(function () {
                 }
                 // 移动ul
                 $('.picBox').css({
-                    'left': -nowIndex * 1901 + 'px'
+                    'left': -nowIndex * 1901 + 'px',
                 });
-                // 每一张图片淡入淡出效果改变opacity
-                // $('.picBox li').eq(nowIndex).animate({
-                //     'opacity': 1
-                // }, 3000);
-                // 其他图片再将opacity变0
-                // $('.picBox li').not(nowIndex).css('opacity', 1);
+                // 调用小圆点
                 changeStyle();
             }
 
@@ -122,6 +114,36 @@ $(function () {
                 $('.active').removeClass('active');
                 $('.list li').eq(nowIndex).addClass('active');
             }
+
+            //第二个功能: -- loading --
+            var nowTop = 0;
+            var decretion = 1;
+            var loadTimer = setInterval(() => {
+                nowTop += -40 * decretion;
+                $('.loading .container').css({
+                    'top': nowTop + 'px'
+                });
+                if (nowTop == -120) {
+                    decretion = -1;
+                }else if(nowTop == 0){
+                    decretion = 1;
+                }
+            }, 2500);
+            function start(){
+               
+            }
+            function stop(){
+                clearInterval(loadTimer);
+            }
+            $('.loading .container').on('mouseenter', function () {
+                // 鼠标移入停止轮播
+                stop();
+            }).on('mouseleave', function () {
+                // 鼠标移出继续轮播
+                start();
+            })
+            
+            //第三个功能： --图片放大--
         }
     })
 })
