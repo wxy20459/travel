@@ -1,11 +1,14 @@
-.header{
-    top: 0;
+.travell{
+    top:6px;
+}
+.travell>.header>div>img{
+    cursor: pointer;
 }
 .header>div:last-child{
     text-align: center;
 }
 .navee{
-    z-index: 1000;
+    z-index: 10;
     width: 100%;
 }
 /* 登录按钮设置 */

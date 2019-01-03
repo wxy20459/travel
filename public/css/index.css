@@ -147,14 +147,13 @@ a{
 .travel>.more{
     margin-top:40px;
 }
-/* 小火柴 */
-
 .more>.container>.row>div>div>img{
     transition: all 1s ease 0s;
 }
 .more>.container>.row>div>div{
     overflow: hidden;
 }
+/* 鼠标悬停图片放大 */
 .more>.container>.row>div>div>img:hover{
     transform: scale(1.2);
 }
@@ -163,12 +162,26 @@ a{
     display: inline-block;
     margin-top:8px;
 }
+/* 字体--h5 */
 .more>.container>.row>div>div>a>h5{
     color:#0fc7d1;
     font-size: 20px;
 }
 .more>.container>.row>div>div>a>h5:hover{
     color:#13e3ee;
+}
+/* 小火柴 */
+.more>.container>.row>div>div>p{
+    display: block;
+    height: 20px;
+    width:10px;
+    background-color: #0fc7d1;
+    border-radius: 3px;
+    /*代表持续时间为2s，延迟时间为默认值0s*/
+    transition:1s;
+}
+.more>.container>.row>div>div>p:hover{
+    width:100%;
 }
 
 /* 查看更多--按钮 */
@@ -401,6 +414,7 @@ a{
 .about>div>.container>.about_use>.contain>.right>.text>.desc>a:hover{
     background:#0fc7d1;
     color: #fff;
+    transition: all .5s;
 }
 
 /* 热门路线 */
@@ -505,6 +519,7 @@ a{
 .travel>.hot>.btn>div>a:hover{
     background: #0fc7d1;
     color: white;
+    transition: all .5s;
 }
 .travel>.hot>.btn>div>a{
     display: block;
@@ -567,6 +582,9 @@ a{
     line-height: 1.8;
     font-size: 13px;
     color:#999;
+}
+.box>.contain>.hotel_msg>a.hotel_a:hover{
+    color:#0fc7d1;
 }
 
 /* 海豚背景 */

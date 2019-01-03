@@ -1,39 +1,78 @@
+/* 头部 */
 div.null{
+    width:1901px;
     height:100px;
     background:#000;
 }
-div.login_body>img{
-    width:100%;
-}
+/* 会员中心 */
 div.huiyuan{
     font-size:35px;
     text-align: center;
-    line-height: 100px;
+    line-height: 85px;
     color:#0fc7d1;
 }
-/* div.login>div.container{
-    height: 100px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 .9375rem;
-    background:red;
-}
-div.container>div.login_box{
-    background: red;
-} 
-div.login{
+/* 背景图片 */
+div.login>.login_body>div.content{
     position: relative;
+    width:1901px;
+    height: 460px;
+    background-image: url("../img/login/login.jpg")
 }
-div.login>div.container{
+/* 登录窗口 */
+div.login>.login_body>div.content>.login_box{
     position: absolute;
-}
-div.container>.login_box{
-    position: absolute;
-    weight: 400px;
+    width:400px;
     height: 343px;
+    background-color: rgba(255,255,255,.8);
+    top:55px;
+    left:400px;
+}
+div.login_box>form{
     padding: 30px;
-    background:red;
-    top:-425px;
-    left:-121px;
-    z-index: 10;
-} */
+}
+div.login_box>form>input{
+    width:100%;
+    height: 43px;
+    outline-color: #0fc7d1;
+    transition: 1s;
+    padding-left: 15px;
+}
+div.login_box>form>input.two{
+    margin:20px 0;
+}
+div.login_box>form>.forget{
+    margin-bottom: 15px;
+}
+div.login_box>form>.forget>a.one{
+    font-size:15px;
+    display: block;
+    width:340px;
+    text-align: end;
+    text-decoration: none;
+    color:#62a8ea;
+}
+div.login_box>form>.forget>a.one:hover{
+    color:#1e86e7;
+}
+div.login_box>form>button{
+    background:pink;
+    width:100%;
+    color:#fff;
+    height:50px;
+    font-size: 1.286rem;
+    padding: .715rem 1.286rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+    outline-color:rgb(228, 170, 179);
+}
+div.login_box>form>a.two{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width:100%;
+    padding:11px 0;
+    color:#fff;
+    font-size:18px;
+    background:#58c6cc;
+}
