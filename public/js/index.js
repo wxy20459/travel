@@ -4,7 +4,7 @@ $(function () {
         url: "http://127.0.0.1:3000/footer.html",
         type: "get",
         success: function (res) {
-            //第一个功能: -- 轮播图 --
+            //第一个小功能: -- 轮播图 --
             var nowIndex = 0;
             var len = $('.picBox li').length;
             var timer;
@@ -115,7 +115,7 @@ $(function () {
                 $('.list li').eq(nowIndex).addClass('active');
             }
 
-            //第二个功能: -- loading --
+            //第二个小功能: -- loading --
             var nowTop = 0;
             var decretion = 1;
             var loadTimer = setInterval(() => {
@@ -125,14 +125,14 @@ $(function () {
                 });
                 if (nowTop == -120) {
                     decretion = -1;
-                }else if(nowTop == 0){
+                } else if (nowTop == 0) {
                     decretion = 1;
                 }
             }, 2500);
-            function start(){
-               
+            function start() {
+
             }
-            function stop(){
+            function stop() {
                 clearInterval(loadTimer);
             }
             $('.loading .container').on('mouseenter', function () {
@@ -142,7 +142,110 @@ $(function () {
                 // 鼠标移出继续轮播
                 start();
             })
-            //第三个功能： -- 小海豚数据 --
+
+            //第三个小功能： -- 图片放大和过渡效果 --
+            // one
+            $('.travel>.more>.container>.row>.one>div>img')
+                // 移入
+                .on('mouseenter', function () {
+                    //小火柴过渡效果
+                    $('.travel>.more>.container>.row>.one>div>p').css({ 'width': '92%', 'transition': '1s' });
+                    //card阴影
+                    $('.travel>.more>.container>.row>.one').css({ 'box-shadow': '0px 16px 10px -15px #999' });
+                })
+                // 移出
+                .on('mouseleave', function () {
+                    //移除小火柴
+                    $('.travel>.more>.container>.row>.one>div>p').css({ 'width': 0, 'transition': '1s' });
+                    //移除阴影
+                    $('.travel>.more>.container>.row>.one').css({ "box-shadow": 'none' });
+                })
+            // two
+            $('.travel>.more>.container>.row>.two>div>img')
+                // 移入
+                .on('mouseenter', function () {
+                    //小火柴过渡效果
+                    $('.travel>.more>.container>.row>.two>div>p').css({ 'width': '92%', 'transition': '1s' });
+                    //card阴影
+                    $('.travel>.more>.container>.row>.two').css({ 'box-shadow': '0px 16px 10px -15px #999' });
+                })
+                // 移出
+                .on('mouseleave', function () {
+                    //移除小火柴
+                    $('.travel>.more>.container>.row>.two>div>p').css({ 'width': 0, 'transition': '1s' });
+                    //移除阴影
+                    $('.travel>.more>.container>.row>.two').css({ "box-shadow": 'none' });
+                })
+            // three
+            $('.travel>.more>.container>.row>.three>div>img')
+                // 移入
+                .on('mouseenter', function () {
+                    //小火柴过渡效果
+                    $('.travel>.more>.container>.row>.three>div>p').css({ 'width': '92%', 'transition': '1s' });
+                    //card阴影
+                    $('.travel>.more>.container>.row>.three').css({ 'box-shadow': '0px 16px 10px -15px #999' });
+                })
+                // 移出
+                .on('mouseleave', function () {
+                    //移除小火柴
+                    $('.travel>.more>.container>.row>.three>div>p').css({ 'width': 0, 'transition': '1s' });
+                    //移除阴影
+                    $('.travel>.more>.container>.row>.three').css({ "box-shadow": 'none' });
+                })
+            // 第四个小功能 --字体加背景--
+            // one
+            $('.target_body>.container>.row>.one>div>img')
+                // 移入
+                .on('mouseenter', function () {
+                    $('.target_body>.container>.row>.one>h4').css({ 'background-color': '#0fc7d1' });
+                    $('.target_body>.container>.row>.one>h4>p,.target_body>.container>.row>.one>h4>a').css({ 'color': '#fff' });
+                })
+                // 移出
+                .on('mouseleave', function () {
+                    $('.target_body>.container>.row>.one>h4').css({ 'background-color': '', 'transition': '1s' });
+                    $('.target_body>.container>.row>.one>h4>a').css({ 'color': 'rgb(82, 79, 79)' });
+                    $('.target_body>.container>.row>.one>h4>p').css({ 'color': '#999' })
+                })
+
+            // two
+            $('.target_body>.container>.row>.two>div>img')
+                // 移入
+                .on('mouseenter', function () {
+                    $('.target_body>.container>.row>.two>h4').css({ 'background-color': '#0fc7d1' });
+                    $('.target_body>.container>.row>.two>h4>p,.target_body>.container>.row>.two>h4>a').css({ 'color': '#fff' });
+                })
+                // 移出
+                .on('mouseleave', function () {
+                    $('.target_body>.container>.row>.two>h4').css({ 'background-color': '', 'transition': '1s' });
+                    $('.target_body>.container>.row>.two>h4>a').css({ 'color': 'rgb(82, 79, 79)' });
+                    $('.target_body>.container>.row>.two>h4>p').css({ 'color': '#999' })
+                })
+            // three
+            $('.target_body>.container>.row>.three>div>img')
+                // 移入
+                .on('mouseenter', function () {
+                    $('.target_body>.container>.row>.three>h4').css({ 'background-color': '#0fc7d1' });
+                    $('.target_body>.container>.row>.three>h4>p,.target_body>.container>.row>.three>h4>a').css({ 'color': '#fff' });
+                })
+                // 移出
+                .on('mouseleave', function () {
+                    $('.target_body>.container>.row>.three>h4').css({ 'background-color': '', 'transition': '1s' });
+                    $('.target_body>.container>.row>.three>h4>a').css({ 'color': 'rgb(82, 79, 79)' });
+                    $('.target_body>.container>.row>.three>h4>p').css({ 'color': '#999' })
+                })
+            // four
+            $('.target_body>.container>.row>.four>div>img')
+                // 移入
+                .on('mouseenter', function () {
+                    $('.target_body>.container>.row>.four>h4').css({ 'background-color': '#0fc7d1' });
+                    $('.target_body>.container>.row>.four>h4>p,.target_body>.container>.row>.four>h4>a').css({ 'color': '#fff' });
+                })
+                // 移出
+                .on('mouseleave', function () {
+                    $('.target_body>.container>.row>.four>h4').css({ 'background-color': '', 'transition': '1s' });
+                    $('.target_body>.container>.row>.four>h4>a').css({ 'color': 'rgb(82, 79, 79)' });
+                    $('.target_body>.container>.row>.four>h4>p').css({ 'color': '#999' })
+                })
         }
     })
 })
