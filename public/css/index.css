@@ -157,7 +157,7 @@ img {
 
 /* 查看更多 */
 .travel>.more {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 /* 图片 */
 .more>.container>.row>div>div>img {
@@ -374,14 +374,6 @@ img {
     width: 1901;
 }
 
-.travel>.about>.background_list_img {
-    background: url("../img/about/about_1.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 470px;
-
-}
-
 .travel>.about>div>.container>.about_use>.head {
     height: 100px;
 }
@@ -406,6 +398,11 @@ img {
     width: 50px;
     height: 2px;
     background: #0fc7d1;
+}
+
+.travel>.about>.background_list_img{
+    background-image: url(../img/about/about_1.jpg);
+    height: 480px;
 }
 
 /* 左浮动 */
@@ -485,67 +482,33 @@ img {
     margin-top: 30px;
     width: 100%;
 }
-
 .travel>.hot>.head {
     text-align: center;
     margin-bottom: 30px;
 }
-/* 图2 */
-.travel>.hot>.row>.two{
-    position: relative;
-}
-.travel>.hot>.row>.two>.top{
-    position: absolute;
-    border:1px solid #fff;
-    width:415px;
-    height:233px;
-    z-index: 10;
-    top: 30px;
-    left: 22px;
+/* img的父元素div */
+.travel>.hot>.row>div{
     transition: all 1s ease 0s;
 }
-.travel>.hot>.row>.two>.top:hover{
-    transform: scale(.8)
+.travel>.hot>.row>div:hover{
+    transform: scale(.9);
 }
-/* 图4 */
-.travel>.hot>.row>.four{
-    position: relative;
-}
-.travel>.hot>.row>.four>.top{
+/* 图片上的div */
+.travel>.hot>.row>div>.top{
     position: absolute;
     border:1px solid #fff;
-    width:415px;
-    height:233px;
+    width:100%;
+    height:100%;
     z-index: 10;
-    top: 30px;
-    left: 22px;
+    top: 0;
+    left: 0;
+    transition: all 1s ease 0s;
 }
-/* 图5 */
-.travel>.hot>.row>.five{
-    position: relative;
+.travel>.hot>.row>div>.top:hover{
+    transform: scale(.9);
+    transition: all .5s linear;
 }
-.travel>.hot>.row>.five>.top{
-    position: absolute;
-    border:1px solid #fff;
-    width:415px;
-    height:233px;
-    z-index: 10;
-    top: 30px;
-    left: 22px;
-}
-/* 图7 */
-.travel>.hot>.row>.seven{
-    position: relative;
-}
-.travel>.hot>.row>.seven>.top{
-    position: absolute;
-    border:1px solid #fff;
-    width:415px;
-    height:233px;
-    z-index: 10;
-    top: 30px;
-    left: 22px;
-}
+ 
 /* title */
 .travel>.hot>.head>.title {
     font-size: 32px;
@@ -595,14 +558,9 @@ img {
     color: #999;
     display: inline-block;
     padding: 0 22px 0 0;
-    float: left;
     font-size: 20px;
     margin-bottom: 0;
-}
-
-/* 鼠标悬停 */
-.travel>.hot>.row>.contain>.date:hover {
-    color: #0fc7d1;
+    font-weight:400;
 }
 
 .travel>.hot>.row>.contain>.title {
@@ -618,7 +576,6 @@ img {
     width: 100%;
     height: 30px;
     line-height: 30px;
-    float: left;
 }
 
 .travel>.hot>.row>.contain>.description {
@@ -680,7 +637,7 @@ img {
     height: 1300px;
     padding: 50px 0;
 }
-
+/* 头部 */
 .travel>.hotel>.container>.head {
     text-align: center;
 }
@@ -693,19 +650,24 @@ img {
 
 .travel>.hotel>.container>.head>p {
     color: #999;
+    margin-bottom: 10px;
 }
 
 /* hotel>box */
 .hotel>.container>.box>.contain {
+    position: relative;
     width: 50%;
     padding: 0 15px;
     float: left;
+    /* box-shadow:0px 4px 10px #999; */
 }
 
+/* 图片 */
 .hotel>.container>.box>.contain>img {
     display: block;
     width: 100%;
     border-radius: 3px;
+    margin-top:20px;
 }
 
 .hotel>.container>.box>.contain>.hotel_msg {
@@ -725,9 +687,21 @@ img {
     font-size: 13px;
     color: #999;
 }
-
-.box>.contain>.hotel_msg>a.hotel_a:hover {
-    color: #0fc7d1;
+/* a标签 */
+.hotel>.container>.box>.contain>a{
+    position: absolute;
+    bottom: 46px;
+    right: 35px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    color:#ddd;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: all ease-out 0.3s;
+    text-align: center;
+    font-size: 20px;
 }
 
 /* 海豚背景 */
@@ -797,6 +771,7 @@ img {
 
     .travel>.dolphin>.container>.row>.data_1 h5 {
         font-size: 25px;
+        font-weight: 300;
     }
 
     .travel>.dolphin>.container>.row>.data_1 p {
