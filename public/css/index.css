@@ -15,6 +15,7 @@ a {
 img {
     cursor: pointer;
 }
+
 /* 轮播 */
 .wrapper {
     position: relative;
@@ -146,9 +147,18 @@ img {
     font-size: 15px;
 }
 
+
 /* a标签悬浮 */
 .loading>.container li a:hover {
     color: #0fc7d1;
+}
+
+/*  */
+.carousel-inner>.daohang>.container>.row>div>a {
+    color: #fff;
+    padding: 10px;
+    font-size: 17px;
+    /*  */
 }
 
 .wrapper>.loading>.container ul li.two {
@@ -156,26 +166,42 @@ img {
 }
 
 /* 查看更多 */
+/*  */
 .travel>.more {
     margin-top: 50px;
 }
+
 /* 图片 */
 .more>.container>.row>div>div>img {
     transition: all 1s ease 0s;
+    /*  */
+}
+
+.more>.container>.row>div>img {
+    margin: 30px 0 0;
+    width: 360px;
+}
+
+.more>.container>.row>div>a {
+    text-decoration: none;
+    display: block;
+    margin-top: 8px;
+
 }
 
 /* 鼠标悬停图片放大*/
 .more>.container>.row>div>div {
     overflow: hidden;
 }
-.travel>.more>.container>.row>div>div>img:hover{
+
+.travel>.more>.container>.row>div>div>img:hover {
     transform: scale(1.2);
-} 
+}
 
 /* h5距离顶部 */
 .more>.container>.row>div>div>a {
     display: inline-block;
-    margin:  8px 0 10px 0;
+    margin: 8px 0 10px 0;
 }
 
 /* 字体--h5 */
@@ -183,19 +209,23 @@ img {
     color: #0fc7d1;
     font-size: 20px;
 }
+
 /* h5字体鼠标悬停效果 */
 .more>.container>.row>div>div>a>h5:hover {
     color: #13e3ee;
 }
-.more>.container>.row>div{
-    position: relative; 
+
+.more>.container>.row>div {
+    position: relative;
 }
-.more>.container>.row>div>.more_p{
+
+.more>.container>.row>div>.more_p {
     position: absolute;
-    margin:0;
+    margin: 0;
 }
+
 /* 小火柴 */
-.more>.container>.row>div>div>p{
+.more>.container>.row>div>div>p {
     display: block;
     height: 2px;
     width: 0px;
@@ -285,9 +315,17 @@ img {
     padding: 0 20px;
 }
 
+
 .target>.container>.title-box>ul>li.all>a {
     background: #0fc7d1;
     color: #fff;
+}
+
+/*  */
+.target>.container>.title-box>ul>.active>a {
+    background: #0fc7d1;
+    color: #fff;
+    /*  */
 }
 
 .target>.container>.title-box>ul>li>a:hover {
@@ -301,19 +339,22 @@ img {
     padding-right: 0;
 }
 
-.target_body>.container>.row>:first-child>div>img{
+.target_body>.container>.row>:first-child>div>img {
     margin-left: 0;
 }
+
 /* 图片放大 */
 
-.target_body>.container>.row>div>div{
-    padding:20px 0 8px 0;
+.target_body>.container>.row>div>div {
+    padding: 20px 0 8px 0;
     overflow: hidden;
 }
-.target_body>.container>.row>div>div>img{
+
+.target_body>.container>.row>div>div>img {
     transition: all 1s ease 0s;
 }
-.target_body>.container>.row>div>div>img:hover{
+
+.target_body>.container>.row>div>div>img:hover {
     transform: scale(1.1);
 }
 
@@ -369,9 +410,19 @@ img {
 }
 
 /* 关于我们 */
+
 .travel>.about {
     padding: 50px 0 50px 0;
     width: 1901;
+}
+
+.travel>.about {
+    padding: 50px;
+    height: 505px;
+    background: url("../img/about/about_1.jpg") no-repeat center;
+    background-size: cover;
+    /* background: url(bg-img.jpg) no-repeat center center fixed; */
+
 }
 
 .travel>.about>div>.container>.about_use>.head {
@@ -400,7 +451,7 @@ img {
     background: #0fc7d1;
 }
 
-.travel>.about>.background_list_img{
+.travel>.about>.background_list_img {
     background-image: url(../img/about/about_1.jpg);
     height: 480px;
 }
@@ -482,39 +533,45 @@ img {
     margin-top: 30px;
     width: 100%;
 }
+
 .travel>.hot>.head {
     text-align: center;
     margin-bottom: 30px;
 }
+
 /* img的父元素div */
-.travel>.hot>.row>div{
+.travel>.hot>.row>div {
     transition: all 1s ease 0s;
 }
-.travel>.hot>.row>div:hover{
+
+.travel>.hot>.row>div:hover {
     transform: scale(.9);
 }
+
 /* 图片上的div */
-.travel>.hot>.row>div>.top{
+.travel>.hot>.row>div>.top {
     position: absolute;
-    border:1px solid #fff;
-    width:100%;
-    height:100%;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
     z-index: 10;
     top: 0;
     left: 0;
     transition: all 1s ease 0s;
 }
-.travel>.hot>.row>div>.top:hover{
+
+.travel>.hot>.row>div>.top:hover {
     transform: scale(.9);
     transition: all .5s linear;
 }
- 
+
 /* title */
 .travel>.hot>.head>.title {
     font-size: 32px;
     color: #333;
     height: 45px;
 }
+
 /* span.line 绝对定位 */
 .travel>.hot>.head>.line {
     color: #999;
@@ -560,7 +617,7 @@ img {
     padding: 0 22px 0 0;
     font-size: 20px;
     margin-bottom: 0;
-    font-weight:400;
+    font-weight: 400;
 }
 
 .travel>.hot>.row>.contain>.title {
@@ -635,8 +692,13 @@ img {
 .travel>.hotel {
     width: 100%;
     height: 1300px;
+
     padding: 50px 0;
+
+    padding: 50px 0;
+
 }
+
 /* 头部 */
 .travel>.hotel>.container>.head {
     text-align: center;
@@ -667,7 +729,7 @@ img {
     display: block;
     width: 100%;
     border-radius: 3px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .hotel>.container>.box>.contain>.hotel_msg {
@@ -677,6 +739,17 @@ img {
 .hotel>.container>.box>.contain>.hotel_msg>a {
 
     color: #333;
+}
+
+/*  */
+.hotel>.container>.box>.contain>.hotel_msg {
+    padding: 20px 80px 31px 25px;
+}
+
+.hotel>.container>.box>.contain>.hotel_msg>a {
+    text-decoration: none;
+    color: #333;
+    /*  */
     font-size: 20px;
     margin-bottom: 5px;
     display: block;
@@ -687,8 +760,9 @@ img {
     font-size: 13px;
     color: #999;
 }
+
 /* a标签 */
-.hotel>.container>.box>.contain>a{
+.hotel>.container>.box>.contain>a {
     position: absolute;
     bottom: 46px;
     right: 35px;
@@ -696,7 +770,7 @@ img {
     width: 32px;
     height: 32px;
     line-height: 30px;
-    color:#ddd;
+    color: #ddd;
     border: 1px solid #ddd;
     border-radius: 3px;
     transition: all ease-out 0.3s;
@@ -708,7 +782,7 @@ img {
 .travel>.dolphin {
     width: 100%;
     height: 226px;
-    background-image: url(../img/background/backgorud.jpg);
+    background-image: url('../img/background/backgorud.jpg');
 }
 
 .travel>.dolphin>.container>.row {
@@ -811,6 +885,7 @@ ul.colmn_ul>li.one>a {
     color: #0fc7d1;
 }
 
+
 /* img */
 div.colmn_img1 {
     width: 165px;
@@ -821,6 +896,23 @@ div.colmn_img1>img {
     width: 100%;
 }
 
+.travel>.column>.container>.row>.left>.head>ul>.bord {
+    color: rgb(165, 164, 164);
+    cursor: pointer;
+}
+
+.travel>.column>.container>.row>.left>.head>ul>li:nth-child(2) {
+    color: #0fc7d1;
+}
+
+/* 左右小箭头 */
+.travel>.column>.container>.row>.left>.head>ul>.three {
+    font-size: 20px;
+    color: rgb(110, 107, 107);
+    cursor: pointer;
+
+}
+
 /* body */
 
 /* 标题a */
@@ -829,6 +921,18 @@ a.colmn_a {
     font-size: 17px;
     color: #707070;
     font-weight: 600;
+    text-decoration: none;
+}
+
+.travel>.column>.container>.row>.left>.body>.column_ll>h4>a:hover {
+    color: #0fc7d1;
+}
+
+.travel>.column>.container>.row>.left>.body>.column_ll>p {
+    margin: 0;
+    line-height: 1.5em;
+    color: #999;
+    font-size: 12px;
 
 }
 
@@ -869,6 +973,7 @@ a.colmn_more:hover {
     color: #0fc7d1;
 }
 
+
 /* ul>li */
 ul.colmn_ul_li {}
 
@@ -876,12 +981,27 @@ ul.colmn_ul_li>li {
     padding: 3px 0;
 }
 
-ul.colmn_ul_li>li>a {
-    color: #999;
+.column>.container>.row>.right>.head>a:hover {
+    color: #0fc7d1;
+}
+
+/* 旅记攻略 ul>li */
+.column>.container>.row>.right>ul {
+    list-style-type: none;
+    margin-top: 20px;
 
 }
 
+ul.colmn_ul_li>li>a {
+    color: #999;
+}
+
 ul.colmn_ul_li>li>a:hover {
+    color: #0fc7d1;
+}
+
+
+.column>.container>.row>.right>ul>li>a:hover {
     color: #0fc7d1;
 }
 
@@ -894,15 +1014,22 @@ ul.colmn_ul_li>li>a:hover {
     line-height: 58px;
 }
 
-.travel>.footer_link>.container>ul {}
+/* .travel>.footer_link>.container>ul {} */
 
 .travel>.footer_link>.container>ul>li {
     display: inline;
 }
 
+
 .travel>.footer_link>.container>ul>li:first-child {
     color: #333;
     font-size: 18px;
+}
+
+.travel>.footer_link>.container>ul>li:first-child {
+    color: #333;
+    font-size: 18px;
+
 }
 
 .travel>.footer_link>.container>ul>li:not(:first-child) {
